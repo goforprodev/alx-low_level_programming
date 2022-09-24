@@ -1,19 +1,16 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
-* print_numbers - Print numbers from 0 - 9.
-*
-* Return: Return 0.
-*/
+  * print_numbers: print numbers from 0 to 9
+  * Return: return void
+ */
 
 void print_numbers(void)
 {
 	int i;
-
-	for (i = '0'; i <= '9'; i++)
+	for (i = 48; i <= 57; i++)
 	{
-		_putchar(i);
+		_putchar('%c',i);
 	}
 	_putchar('\n');
 }
